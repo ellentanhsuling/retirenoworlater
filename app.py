@@ -5,7 +5,7 @@ from datetime import datetime
 
 def calculate_retirement(api_key, user_data):
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-2.0')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
     prompt = f"""
     Based on the following financial information, estimate the retirement age and provide brief financial advice:
